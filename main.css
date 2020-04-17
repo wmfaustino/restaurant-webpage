@@ -1,0 +1,318 @@
+/* ----------------------- RESET ----------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*  */
+    background-repeat: repeat;
+}
+/* ----------------------- BODY ----------------------- */
+#body-container {
+    width: 85vw;
+   /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    margin: 0 auto;
+    background-image: url(./img/bg-body.png);
+}
+/* ----------------------- HEADER ----------------------- */
+header {
+    height: calc(15px + 180px + 30px + 50px + 20px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#logo-container {
+    height: calc(15px + 180px + 20px);
+    width: calc(15px + 180px + 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#logo-background {
+    background-image: url(./img/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 50%;
+}
+#menu-nav {
+    height: calc(10px + 50px + 10px);
+    width: 100%;
+    position: relative;
+}
+#hamb-menu {
+    font-size: 1.5rem;
+    transition: 200ms ease;
+    display: none;
+}
+#menu-nav #toggle {
+    display: none;
+}
+#menu-nav ul {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-nav ul li {
+    height: 50px;
+    width: calc(90% / 6);
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-nav ul li a {
+    font-size: 1rem;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(239, 239, 239);
+}
+
+/* ----------------------- SECTION BANNER ----------------------- */
+section#banner {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+section#banner img {
+    width: 100%;
+}
+/* ----------------------- SECTION 2 - BOXES RESTAURANTE ----------------------- */
+section#restaurante-flex-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.box-restaurante {
+    width: 32%;
+    margin-bottom: 30px;
+}
+.box-restaurante img,
+.box-restaurante h3,
+.box-restaurante p {
+    width: 100%;
+    text-align: justify;
+}
+.box-restaurante h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+.box-restaurante p {
+    font-size: 1.2rem;
+}
+.btn {
+    width: calc(380px / 3.7);
+    height: 37px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(239, 239, 239);
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+/* ----------------------- FOOTER ----------------------- */
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(181,51, 34);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+#footer-nav {
+    width: 100%;
+    height: 100%;
+}
+#footer-nav #ul-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#footer-nav #ul-footer li {
+    padding: 0 1.3rem;
+    height: 1.11rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#footer-nav #ul-footer li a {
+    width: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: rgb(239, 239, 239);
+}
+.footer-borda-lateral {
+    border-left: 1px solid rgb(239, 239, 239);
+    border-right: 1px solid rgb(239, 239, 239);
+}
+/* ----------------------- MEDIA QUERIES - extra large-----------------------
+
+acima de 992px será o padrão. CSS escrito acima */
+
+/* ----------------------- MEDIA QUERIES - large-----------------------
+
+Entre 768px e 992px.
+05_boceto_md */
+
+@media screen and (max-width: 992px) {
+    #body-container {
+        width: 95vw;
+    }
+}
+
+/* ----------------------- MEDIA QUERIES - medium -----------------------
+
+entre 768px e 600px
+04_boceto_sm */
+
+@media screen and (max-width: 768px) {
+    #logo-container {
+        height: calc(215px - 50px);
+        width: calc(215px - 50px);
+    }
+    div#logo-background {
+        background-size: 130px;
+        width: 130px;
+        height: 130px;
+    }
+    #body-container {
+        width: 97vw;
+    }
+    div.box-restaurante {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .box-restaurante h3 {
+        font-size: 3vw;
+    }
+    .box-restaurante p {
+        font-size: 1.1rem;
+    }
+    footer {
+        display: inline-block;
+        height: auto;
+    }
+    .footer-borda-lateral {
+        border: none;
+    }
+    #footer-nav #ul-footer  {
+        display: block;
+    }
+    #footer-nav #ul-footer li {
+        height: 30px;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        border-bottom: 0.05px solid rgb(31, 10, 10);
+    }
+    #footer-nav #ul-footer li:nth-last-child(1) {
+        border-bottom: none;
+    }
+    #footer-nav #ul-footer li a {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #footer-nav #ul-footer li a:hover {
+        text-transform: uppercase;
+    }   
+}
+
+/* ----------------------- MEDIA QUERIES - small -----------------------
+
+abaixo de 600px
+03_boceto_xs */
+
+@media screen and (max-width: 600px) {
+    #body-container {
+        width: 98vw;
+    }
+    #menu-nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    #hamb-menu {
+        display: block;
+        text-align: center;
+      
+    }
+    #hamb-menu label {
+        font-size: 2.1rem;
+        display: inline;
+        padding: 2px;
+        cursor: pointer;
+    }
+    #menu-nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translateX(-110%);
+        
+    }
+    #menu-nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgb(28, 28, 28);
+        transition: 300ms ease-in-out;
+    }
+    #menu-nav ul li a {
+        font-size: 0.9rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #menu-nav ul li a#portifolio {
+        font-size: 0.8rem;
+    }
+    #menu-nav ul li a:hover {
+        cursor: pointer;
+        
+    }
+    #restaurante-flex-boxes {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div.box-restaurante {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .box-restaurante h3 {
+        font-size: 1.5em;
+    }
+    nav#menu-nav > input#toggle:checked ~ ul#ul-nav > li {
+        transform: translateX(110%);
+    }
+}
