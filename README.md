@@ -1,6 +1,8 @@
-# pure-css-responsive-restaurant-webpage
+# Responsive Restaurant Webpage
+- - -
 
-https://wilson-faustino.github.io/pure-css-responsive-restaurant-webpage/
+## See for yourself
+https://wmfaustino.github.io/restaurant-webpage/
 - - -
 ## What is it?
 It's a simple restaurant web page.
@@ -12,6 +14,8 @@ It has 3 break points (desktop first) and it's made only with CSS. No javascript
 
 * max-width: 600px.
 
+## How?
+I got a few wireframes.
 
 - - -
 ##  Why?
@@ -20,7 +24,7 @@ Just want to practice.
 ## Feel free to clone it
 
 ```git
-$ git clone https://github.com/wilson-faustino/pure-css-responsive-restaurant-webpage.git
+$ https://github.com/wmfaustino/restaurant-webpage.git
 ```
 - - -
 
